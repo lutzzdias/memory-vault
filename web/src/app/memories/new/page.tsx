@@ -37,12 +37,12 @@ export default function NewMemory() {
           </label>
         </div>
 
-        <input type="file" id="media" className="invisible" />
+        <input type="file" id="media" className="invisible h-0 w-0" />
 
         <textarea
           name="content"
           spellCheck={false}
-          className="flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400"
+          className="flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
           placeholder="Fique livre para adicionar fotos, vídeos e relatos sobre essa experiência que você quer lembrar para sempre."
         />
       </form>
