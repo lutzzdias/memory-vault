@@ -11,6 +11,8 @@ const pump = promisify(pipeline)
 // TODO: use file upload servide (google cloud storage, cloudfare r2, amazon..., etc)
 export async function uploadRoutes(app: FastifyInstance) {
   app.post('/upload', async (request, reply) => {
+    // limits does not stop from receiving a file larger, it only cuts file when it reaches 5Mb
+    // TODO: deal with larger files
     const upload = await request.file({
       limits: {
         fileSize: 5_242_000, // 5Mb
