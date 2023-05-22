@@ -52,6 +52,7 @@ export default function Layout() {
       >
         {/* redirect user to next route (memories) in case the redirect (isUserAuthenticated) is true */}
         <Stack.Screen name="index" redirect={isUserAuthenticated} />
+        <Stack.Screen name="new" />
         <Stack.Screen name="memories" />
       </Stack>
     </ImageBackground>
