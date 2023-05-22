@@ -4,7 +4,7 @@ import { prisma } from '../lib/prisma'
 import { request } from 'http'
 
 export async function memoriesRoutes(app: FastifyInstance) {
-  // before executing the route, execute the hook (verify if user is authenticated)
+  // before executing any memories route, execute the hook (verify if user is authenticated)
   app.addHook('preHandler', async (request) => {
     await request.jwtVerify()
   })
