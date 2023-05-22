@@ -7,7 +7,7 @@ An application for recording memories, where the user can add texts and photos o
 - [Node.js](https://nodejs.org/en)
 - [Fastify](https://www.fastify.io/)
 - [React](https://react.dev/)
-- [Next](https://nextjs.org/_
+- [Next](https://nextjs.org/)
 - [Next Auth](https://next-auth.js.org/)
 - [Expo](https://expo.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
