@@ -31,13 +31,8 @@ An application for recording memories, where the user can add texts and photos o
 - [ ] Memory listing filters (eg.: from 2020 to 2021)
 - [ ] Responsive layout
 
-##### Design
+#### Design
 [Figma](https://www.figma.com/community/file/1240070456276424762)
 
-###### Disclaimer
-This application was developed during the *[Next Level Week - Spacetime](https://www.rocketseat.com.br/nlw)*,
-an event hosted by *[Rocketseat](https://www.rocketseat.com.br/)*.
-Next Level Week is a completely free and online event with the objective of taking you to the next level.
-
-This was the application taught in that event. However, in order to learn more and grow as a developer, this
-application has some [additional features](#additional-features).
+##### Disclaimer
+###### This application was developed during the *[Next Level Week - Spacetime](https://www.rocketseat.com.br/nlw)*, an event hosted by *[Rocketseat](https://www.rocketseat.com.br/)*. Next Level Week is a completely free and online event with the objective of taking you to the next level. This was the application taught in that event. However, in order to learn more and grow as a developer, this application has some [additional features](#additional-features).
