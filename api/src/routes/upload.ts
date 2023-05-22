@@ -8,6 +8,7 @@ import { promisify } from 'node:util'
 
 const pump = promisify(pipeline)
 
+// TODO: use file upload servide (google cloud storage, cloudfare r2, amazon..., etc)
 export async function uploadRoutes(app: FastifyInstance) {
   app.post('/upload', async (request, reply) => {
     const upload = await request.file({
@@ -43,6 +44,11 @@ export async function uploadRoutes(app: FastifyInstance) {
     // idk, make stream actually do the upload
     await pump(upload.file, writeStream)
 
-    return { ok: true }
+    // get the url of server (made this way so it's not static and will not have to be manually changed)
+    const fullUrl = request.protocol.concat('://').concat(request.hostname)
+    // create file specific url with the fullUrl variable as the base (eg.: 'http://localhost:3333/uploads/faldsjfldsjfi239042jre.png')
+    const fileUrl = new URL(`/uploads/${fileName}`, fullUrl).toString()
+
+    return { fileUrl }
   })
 }
