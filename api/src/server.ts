@@ -4,8 +4,8 @@ import fastify from 'fastify'
 
 import { resolve } from 'node:path'
 
-import { memoriesRoutes } from './routes/memories'
 import { authRoutes } from './routes/auth'
+import { memoriesRoutes } from './routes/memories'
 import { uploadRoutes } from './routes/upload'
 
 const app = fastify()
@@ -32,7 +32,6 @@ app.register(memoriesRoutes)
 app
   .listen({
     port: 3333,
-    host: '0.0.0.0',
   })
   .then(() => {
     console.log('🔥 HTTP server running on http://localhost:3333')
